@@ -24,7 +24,7 @@ def myfunc2(s):
            list1.append(i) 
         elif i.isnumeric():
            list2.append(i) 
-        elif i in ['[',']','@','_','!','#','$','%','^','&','*','(',')','?',':']  :
+        elif i in ['%','^','&','*','(',')','?',':','[',']','@','_','!','#','$']  :
             list3.append(i)
     
     print("No of alphabetic character are ", len(list1))
