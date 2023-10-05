@@ -16,21 +16,21 @@ myfunc1('a3b4c2')
 
 
 def myfunc2(s):
-    list1=[]
-    list2=[]
-    list3=[]
+    l1=0
+    l2=0
+    l3=0
     for i in s:
         if i.isalpha():
-           list1.append(i) 
+           l1=l1+1 
         elif i.isnumeric():
-           list2.append(i) 
+           l2=l2+1 
         elif i in ['%','^','&','*','(',')','?',':','[',']','@','_','!','#','$']  :
-            list3.append(i)
+            l3=l3+1
     
-    print("No of alphabetic character are ", len(list1))
+    print("No of alphabetic character are ", l1)
     
-    print("No of Numeric character are ", len(list2))
+    print("No of Numeric character are ", l2)
     
-    print("No of special character are ", len(list3))
+    print("No of special character are ", l3)
     
 myfunc2('Naukri12345@@#')
