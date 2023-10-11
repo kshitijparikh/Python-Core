@@ -4,6 +4,7 @@ def func1(my_dict):
     try:
         for i in my_dict.values():
             assert float(i)
+        assert len(my_dict)>0
         keys=list(my_dict.keys())
         keys.sort()
         sorted_dict={i:my_dict[i] for i in keys}
