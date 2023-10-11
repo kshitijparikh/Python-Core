@@ -1,5 +1,6 @@
-#1
+#1.1
 def func1(my_dict):
+    
     try:
         for i in my_dict.values():
             assert float(i)
@@ -10,13 +11,11 @@ def func1(my_dict):
         print(list1)
     except:
         print('Invalid Input') 
-        
+
 func1({'c': 3, 'a': 1, 'd': 4, 'b': 2})
 
 
-
 #2
-
 def func2(data,sum):
     try:
         assert len(data)>2
@@ -32,3 +31,21 @@ def func2(data,sum):
 x=func2([1, 2, 3, 4, 5, 6, 7, 8, 9],10)
 list2=[i for i in x]
 print(list2)
+
+
+#1.2
+def func1(my_dict):
+    import numpy as np    
+    try:
+        for i in my_dict.values():
+            assert float(i)
+        keys=list(my_dict.keys())
+        values=list(my_dict.values())
+        sorted_index=np.argsort(values)
+        sorted_dict={keys[i]:values[i] for i in sorted_index}
+        list1=[(values,keys) for keys,values in sorted_dict.items()]
+        print(list1)
+    except:
+        print('Invalid Input') 
+        
+func1({'c': 3, 'a': 1, 'd': 4, 'b': 2})
