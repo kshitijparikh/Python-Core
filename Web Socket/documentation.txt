@@ -1,0 +1,25 @@
+\\WHAT IS A WEBSOCKET?
+WebSocket is a protocol for machine-to-machine communication that keeps a TCP connection open for bi-directional passing of information. 
+The websocket is a connection between two computers. The connection can be used to either send or receive information from either computer. 
+The websocket can be configured as a server or client. A websocket server listens for requests and returns a result based on the input. 
+The server can also function as a client by sending information without a specific request
+
+
+\\HOW TO INSTALL WEBSOCKETS?
+The websockets package is a Python library for building WebSocket servers and clients.
+
+pip install websockets
+
+There are other programming languages where websocket server and client are written such as JavaScript and PHP. 
+Websocket communication occurs over TCP so that various programming languages can seamlessly communicate. For example, a Python client can call an API running on a server with JavaScript node.js
+
+
+
+\\WEBSOCKET SERVER
+The Python websockets package is build on top of asyncio for asynchronous actions from the server as it listens for client requests. 
+'server1' is a simple WebSocket server in which the API listens for a name and returns a greeting.
+'server2' is a simple Websocket server that waits for a 'buzz' message and returns which client sent it first. It also sends how slower other clients were.
+
+\\WEBSOCKET CLIENT
+The websockets 'client1' sends a name and listens for a return response.
+The websocket 'client2' sends str 'buzz' when spacebar is pressed.
