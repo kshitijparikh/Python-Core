@@ -47,7 +47,7 @@ def func6(list6,search_string):
     for i in x.values():
       if search_string in i:
         return True
-      return False
+    return False
   return filter(iterator_func,list6)
 
 print(list(func6(list6,'s')))
