@@ -1,4 +1,4 @@
-#Keypoint: Only works in update and not append
+#Keypoint: Only works in update and not append. Assignment is shallow copying.
 #Deep_Copying
 '''
 A deep copy creates a new compound object before inserting copies of the items found in 
