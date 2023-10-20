@@ -38,7 +38,6 @@ for i in x:
 print(x)
 
 
-#2
 import functools
 data = ["123", "456", "789", "abc", "def", "101112"]
 def func2(x):   
@@ -48,7 +47,7 @@ def func2(x):
         except:
             return False
 list2=list(filter(func2,data))
-list2=[int(i) for i in list2]
-y=[lambda x: x**2(i) for i in list2]
-y=functools.reduce(lambda a,b: a+b, list2)
+list2_1=[int(i) for i in list2]
+list2_2=[i**2 for i in list2_1]
+y=functools.reduce(lambda a,b: a+b, list2_2)
 print(y)
